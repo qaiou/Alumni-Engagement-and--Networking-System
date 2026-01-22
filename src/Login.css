@@ -1,4 +1,8 @@
 
+body {
+  background-color: #5b8599;
+}
+
 .form-wrapper {
   display: flex;
   justify-content: center;
@@ -10,7 +14,7 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background: #fafafa;
+  background: rgba(203, 219, 224, 0.427);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -25,7 +29,8 @@
 .form-box select,
 .form-box textarea {
   padding: 8px;
-  border: 1px solid #ccc;
+  background-color: rgb(220, 230, 233);
+  border: 1px solid #949494;
   border-radius: 4px;
   font-size: 14px;
 }
@@ -33,7 +38,7 @@
 .form-box button {
   margin-top: 10px;
   padding: 10px;
-  background: #007bff;
+  background: #4ca3ff;
   color: white;
   border: none;
   border-radius: 4px;
@@ -41,5 +46,5 @@
 }
 
 .form-box button:hover {
-  background: #0056b3;
+  background: #1f63ab;
 }
