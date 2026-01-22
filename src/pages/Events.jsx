@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom"
 import "../AdminDashboard.css"
 import { useState } from "react"
 
-export  function JobListing() {
+export  function Events() {
 
     const navigate = useNavigate()
     const handleDashboard = () => navigate("/dashboard")
@@ -32,7 +32,7 @@ export  function JobListing() {
             <input type="image" src="/user2.png"></input>
             </header>
             <div className="manageAcc">
-            <h2>Job Listing</h2>
+            <h2>Events</h2>
             </div>
         </main> 
         </div>

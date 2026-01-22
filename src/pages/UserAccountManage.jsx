@@ -10,6 +10,7 @@ export function UserManagement(){
     const handleJobListing = () => navigate("/joblisting")
     const handleMentorship = () => navigate("/mentorshippairing")
     const handleEvents = () => navigate("/events")
+    const handleLogout = () => {navigate("/")}
 
     return(
         <div className="layout">
@@ -21,7 +22,7 @@ export function UserManagement(){
             <a href="#" onClick={handleJobListing}>Job Listings</a>
             <a href="#" onClick={handleMentorship}>Mentorship Pairing</a>
             <a href="#" onClick={handleEvents}>Events</a>
-            <a href="#">Logout</a>
+            <a href="#" onClick={handleLogout}>Logout</a>
             </nav>
         </aside>
 
