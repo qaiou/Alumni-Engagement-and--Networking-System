@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
-import "../UserAccountManage.css"
+import "../AdminDashboard.css"
 import { useState } from "react"
 
-export function UserManagement(){
+export  function JobListing() {
 
     const navigate = useNavigate()
     const handleDashboard = () => navigate("/dashboard")
@@ -18,7 +18,7 @@ export function UserManagement(){
             <nav>
             <a href="#" onClick={handleDashboard}>Dashboard</a>
             <a href="#" onClick={handleUserMan}>User Account Management</a>
-            <a href="#" onClick={handleJobListing}>Job Listings</a>
+            <a href="#" onClick={handleJobListing}>Job Listing</a>
             <a href="#" onClick={handleMentorship}>Mentorship Pairing</a>
             <a href="#" onClick={handleEvents}>Events</a>
             <a href="#">Logout</a>
@@ -31,7 +31,7 @@ export function UserManagement(){
             <input type="image" src="/user2.png"></input>
             </header>
             <div className="manageAcc">
-            <h2>User Account Management</h2>
+            <h2>Job Listing</h2>
             </div>
         </main> 
         </div>

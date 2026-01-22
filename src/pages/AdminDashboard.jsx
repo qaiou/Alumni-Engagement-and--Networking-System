@@ -4,15 +4,24 @@ import { useState } from "react"
 
 export  function DashBoard() {
 
+  const navigate = useNavigate()
+  const handleDashboard = () => navigate("/dashboard")
+  const handleUserMan = () => navigate("/usermanagement")
+  const handleJobListing = () => navigate("/joblisting")
+  const handleMentorship = () => navigate("/mentorshippairing")
+  const handleEvents = () => navigate("/events")
+  
+
   return (
     <div className="layout">
       <aside className="sidebar">
         <h2> </h2>
         <nav>
-          <a href="#">User Account Management</a>
-          <a href="#">Job Listings</a>
-          <a href="#">Mentorship Pairing</a>
-          <a href="#">Events</a>
+          <a href="#" onClick={handleDashboard}>Dashboard</a>
+          <a href="#" onClick={handleUserMan}>User Account Management</a>
+          <a href="#" onClick={handleJobListing}>Job Listing</a>
+          <a href="#" onClick={handleMentorship}>Mentorship Pairing</a>
+          <a href="#" onClick={handleEvents}>Events</a>
           <a href="#">Logout</a>
         </nav>
       </aside>
