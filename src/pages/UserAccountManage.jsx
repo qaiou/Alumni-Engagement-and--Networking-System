@@ -1,39 +1,66 @@
 import { useNavigate } from "react-router-dom"
-import "../UserAccountManage.css"
+import "../AdminDashboard.css"
 import { useState } from "react"
+import { Sidebar } from "./Sidebar"
 
 export function UserManagement(){
 
-    const navigate = useNavigate()
-    const handleDashboard = () => navigate("/dashboard")
-    const handleUserMan = () => navigate("/usermanagement")
-    const handleJobListing = () => navigate("/joblisting")
-    const handleMentorship = () => navigate("/mentorshippairing")
-    const handleEvents = () => navigate("/events")
-    const handleLogout = () => {navigate("/")}
+    const [formData, setFormData] = useState({
+    newName: "",
+    newEmail: "",
+    newPhone:"",
+  	})
+
+    const handleInputChange = (event) => {
+        const { name, value } = event.target
+        
+        setFormData((previousKeyValueState) => ({
+        ...previousKeyValueState,
+        [name]: value,
+        }))
+    }
 
     return(
         <div className="layout">
-        <aside className="sidebar">
-            <h2> </h2>
-            <nav>
-            <a href="#" onClick={handleDashboard}>Dashboard</a>
-            <a href="#" onClick={handleUserMan}>User Account Management</a>
-            <a href="#" onClick={handleJobListing}>Job Listings</a>
-            <a href="#" onClick={handleMentorship}>Mentorship Pairing</a>
-            <a href="#" onClick={handleEvents}>Events</a>
-            <a href="#" onClick={handleLogout}>Logout</a>
-            </nav>
-        </aside>
-
+        <Sidebar />
         <main className="main">
             <header className="topbar">
             <h2 className="system">Alumni Engagement and Networking System</h2>
             <input type="image" src="/user2.png"></input>
             </header>
-            <div className="manageAcc">
-            <h2>User Account Management</h2>
-            </div>
+
+            <section className="content">
+                <h2>User Account Management</h2>
+                <div className="card">
+                    <form id="userForm" className="user-form">
+                        <input type="hidden" name="userId" />
+                        <div className="form-group">
+
+                            <label>Name:</label>
+                            <input type="text" name="name" required value={formData.newName} onChange={handleInputChange}/>
+
+                            <label>Email:</label>
+                            <input type="email" name="email" required value={formData.newEmail} onChange={handleInputChange}/>
+
+                            <label>Phone:</label>
+                            <input type="tel" name="phone" required value={formData.newPhone} onChange={handleInputChange}/>
+                            
+                        </div>
+                        <button type="submit" className="createBtn">Add User</button>
+                    </form>
+                    <table className="user-table">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userList"></tbody>
+                    </table>
+                </div>
+            </section>
         </main> 
         </div>
     )

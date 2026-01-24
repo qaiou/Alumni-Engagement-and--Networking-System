@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+
 }
 
 .layout {
@@ -14,7 +15,6 @@
   background: #111827;
   color: white;
   padding: 20px;
-  
 }
 
 .sidebar h2 {
@@ -39,6 +39,7 @@
   background-color: #5b8599;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .topbar {
@@ -73,6 +74,37 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.createBtn {
+  background-color: #212b3e;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+.user-table th {
+    background-color: #f4f4f4;
 }
 
 .image {
