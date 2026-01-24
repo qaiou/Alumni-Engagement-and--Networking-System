@@ -81,6 +81,13 @@
   flex-direction: column;
   margin-bottom: 15px;
 }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
 .createBtn {
   background-color: #212b3e;
@@ -90,6 +97,20 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.deleteBtn{
+  background-color: #212b3e;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.createBtn:hover,
+.deleteBtn:hover {
+  background-color: #394867;
 }
 
 .user-table {

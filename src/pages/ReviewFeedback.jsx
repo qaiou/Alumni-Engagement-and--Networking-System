@@ -13,9 +13,14 @@ export  function ReviewFeedback() {
             <h2 className="system">Alumni Engagement and Networking System</h2>
             <input type="image" src="/user2.png"></input>
             </header>
-            <div className="manageAcc">
-            <h2>Review Feedback</h2>
-            </div>
+
+
+            <section className="content">
+                <h2>Review Feedback</h2>
+                <div className="card">
+                
+                </div>
+            </section>
         </main> 
         </div>
     )
