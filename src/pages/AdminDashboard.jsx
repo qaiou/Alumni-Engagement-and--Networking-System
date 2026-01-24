@@ -36,7 +36,7 @@ export  function DashBoard() {
           <div className="card">
             <h2>Post 1</h2>
             lalalllalalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br/>
-            <img src="/gambo.jpg" alt="first class graduates yay congrats" className="image"></img>
+            <img src="/gambo.png" alt="first class graduates yay congrats" className="image"></img>
             <br/>first class graduates yay congrats
           </div>
           <div className="card"><h2>Post 2</h2></div>
