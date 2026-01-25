@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Login } from './pages/Loginn'
 import { DashBoard } from './pages/AdminDashboard'
 import { UserManagement } from './pages/UserAccountManage'
-import { Notification } from './pages/NotificationManagement'
+import { Notification } from './pages/NotificationArchive'
 import { MentorshipPairing } from './pages/MentorshipPairing'    
 import { ReviewFeedback } from './pages/ReviewFeedback' 
 

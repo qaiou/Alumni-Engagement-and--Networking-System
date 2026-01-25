@@ -16,7 +16,7 @@ export function Sidebar(){
             <nav>
             <a href="#" onClick={handleDashboard}>Dashboard</a>
             <a href="#" onClick={handleUserMan}>User Account Management</a>
-            <a href="#" onClick={handleNotification}>Notification Management</a>
+            <a href="#" onClick={handleNotification}>Notification Archive</a>
             <a href="#" onClick={handleMentorship}>Mentorship Pairing</a>
             <a href="#" onClick={handleReviewFeedback}>Review Feedback</a>
             <a href="#" onClick={handleLogout}>Logout</a>
