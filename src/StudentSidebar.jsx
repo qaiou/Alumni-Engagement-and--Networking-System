@@ -32,7 +32,6 @@ export function StudentSidebar(){
 
 
 //job lsiting
-//event
 //search
 //request mentorship
 //notification
