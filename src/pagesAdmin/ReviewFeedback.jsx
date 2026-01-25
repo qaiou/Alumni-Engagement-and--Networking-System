@@ -59,6 +59,7 @@ export  function ReviewFeedback() {
                             key={fb.id}
                             style={{
                                 border: "1px solid #ccc",
+                                backgroundColor: "#fafafab2",
                                 padding: "12px",
                                 marginBottom: "10px"
                             }}

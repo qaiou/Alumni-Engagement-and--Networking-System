@@ -21,7 +21,13 @@ export function Login() {
     }
 
     const navigate = useNavigate()
-    const handleSubmit = () => navigate("/dashboard")
+    const handleSubmit = (event) => {
+        event.preventDefault()
+
+        if (formData.role === "Admin") navigate("/admindashboard")
+        else if (formData.role === "Student") navigate("/studentdashboard")
+        else alert("Please select a role")
+    }
 
     const handleForgotPassword = () => {
         alert("Password reset link sent to your email (demo).")
@@ -44,10 +50,10 @@ export function Login() {
                 onChange={handleInputChange}
                 >
                 <option value="">Select your account role</option>
-                <option value="alumni">Alumni</option>
+                <option value="Alumni">Alumni</option>
                 <option value="Student">Student</option>
-                <option value="cso">Career Services Officer(CSO)</option>
-                <option value="admin">Admin</option>
+                <option value="CSO">Career Services Officer(CSO)</option>
+                <option value="Admin">Admin</option>
                 </select>
 
                 <label>Username</label>

@@ -3,7 +3,7 @@ import "./AdminDashboard.css"
 
 export function Sidebar(){
     const navigate = useNavigate()
-    const handleDashboard = () => navigate("/dashboard")
+    const handleDashboard = () => navigate("/admindashboard")
     const handleUserMan = () => navigate("/usermanagement")
     const handleNotification = () => navigate("/notification")
     const handleMentorship = () => navigate("/mentorshippairing")
