@@ -132,3 +132,22 @@
   width: 200px;
   height: auto;
 }
+
+
+.mentorship-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.mentorship-container h3 {
+  margin-left: 15px;
+} 
+
+.mentorship-container h4 {
+  margin-top: 15px;
+} 
+
+.request div{
+  cursor: pointer;
+}

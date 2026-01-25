@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom"
-import "../AdminDashboard.css"
+import "./AdminDashboard.css"
 
 export function Sidebar(){
     const navigate = useNavigate()

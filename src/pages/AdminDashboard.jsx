@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import "../AdminDashboard.css"
 import { useState } from "react"
-import { Sidebar } from "./Sidebar"
+import { Sidebar } from "../Sidebar"
 
 export  function DashBoard() {
   
