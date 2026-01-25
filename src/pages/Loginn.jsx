@@ -23,11 +23,20 @@ export function Login() {
     const navigate = useNavigate()
     const handleSubmit = () => navigate("/dashboard")
 
+    const handleForgotPassword = () => {
+        alert("Password reset link sent to your email (demo).")
+    }
+
+    const handleRegister = () => {
+        navigate("/register")
+    }
+
     return (
         
         <div className="form-wrapper">
+            <h1 style={{ textAlign: "center" , padding: "20px"}}>ALUMNI ENGAGEMENT AND NETWORKING SYSTEM</h1>
             <form onSubmit={handleSubmit} className="form-box">
-
+                <h2 style={{ textAlign: "center" }}>LOGIN</h2>
                 <label>Role</label>
                 <select
                 name="role"
@@ -58,6 +67,25 @@ export function Login() {
                 />
 
                 <button type="submit" onClick={handleSubmit}>Log in</button>
+
+                {/* New links */}
+                <div className="login-links">
+                <button
+                    type="button"
+                    onClick={handleForgotPassword}
+                    className="link-btn"
+                >
+                    Forgot Password?
+                </button>
+
+                <button
+                    type="button"
+                    onClick={handleRegister}
+                    className="link-btn"
+                >
+                    Register
+                </button>
+                </div>
             </form>
         </div>
 

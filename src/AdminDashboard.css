@@ -2,7 +2,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-
 }
 
 .layout {
@@ -62,6 +61,25 @@
 .topbar input:hover{
   background: rgb(238, 247, 249);
 }
+.main .add-btn {
+  margin-top: 10px;
+  margin-left:35px;
+  padding: 6px 12px;
+  align-items: right;
+  background: #21254b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #395f73;
+}
+
+.card .btn {
+  margin-right: 8px;
+}
 
 .content {
   padding: 20px;
@@ -99,7 +117,7 @@
   cursor: pointer;
 }
 
-.deleteBtn{
+.btn{
   background-color: #212b3e;
   color: white;
   padding: 8px 12px;
@@ -109,7 +127,7 @@
 }
 
 .createBtn:hover,
-.deleteBtn:hover {
+.btn:hover {
   background-color: #394867;
 }
 
@@ -129,22 +147,21 @@
 }
 
 .image {
-  width: 200px;
+  max-width: 100%;
   height: auto;
 }
 
-
-.mentorship-container {
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 
-.mentorship-container h3 {
+.container h3 {
   margin-left: 15px;
 } 
 
-.mentorship-container h4 {
+.container h4 {
   margin-top: 15px;
 } 
 

@@ -5,6 +5,8 @@ body {
 
 .form-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-top: 30px;
 }
@@ -49,4 +51,18 @@ body {
 
 .form-box button:hover {
   background: #1f63ab;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 14px;
 }

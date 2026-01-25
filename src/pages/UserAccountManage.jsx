@@ -119,7 +119,7 @@ export function UserManagement() {
                     <td>{u.role}</td>
                     <td>
                       <button
-                        className="deleteBtn"
+                        className="btn"
                         onClick={() => handleDelete(u.id)}
                       >
                         Delete Account

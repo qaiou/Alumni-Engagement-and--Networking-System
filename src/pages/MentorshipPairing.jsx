@@ -93,7 +93,7 @@ export  function MentorshipPairing() {
 
             <section className="content">
                 <h2>Mentorship Pairing</h2>
-                <div className="mentorship-container">
+                <div className="container">
 
                     {/*-----------Students---------------- */}
                     <section>
@@ -134,7 +134,7 @@ export  function MentorshipPairing() {
                                 <p>Skills: {selectedAlumni.skills.join(", ")}</p>
                                 <p>Interests: {selectedAlumni.interests.join(", ")}</p>
 
-                                <button onClick={approvePairing} className="deleteBtn">Approve Pairing</button>
+                                <button onClick={approvePairing} className="btn">Approve Pairing</button>
                                 </>
                             ) : (
                                 <p>Select one student and one alumni to review pairing</p>
